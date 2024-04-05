@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../components/Counter.css'
+import ChatApp from './chat/ChatApp';
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -59,7 +60,7 @@ const Counter = () => {
             Decrement
           </button>
         </div>
-      </div><br/><br/>
+      </div><br /><br />
       <div className="container">
         <div className="header">State Management</div>
         <div className="text">
@@ -86,6 +87,7 @@ const Counter = () => {
           For more intricate applications, external state management libraries provide enhanced solutions. Redux stands out among state management libraries by maintaining a single immutable state tree ("store") to which components can subscribe.
         </div>
       </div>
+      <ChatApp />
     </>
   );
 };
